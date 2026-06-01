@@ -14,6 +14,7 @@ target_sources(KF6Notifications PRIVATE
   knotificationreplyaction.cpp
   knotificationmanager.cpp
   knotificationpermission.cpp
+  knotificationconfiguration.cpp
 
   knotifyconfig.cpp
   knotificationplugin.cpp
@@ -105,6 +106,7 @@ endif()
 ecm_generate_headers(KNotifications_HEADERS
   HEADER_NAMES
   KNotification
+  KNotificationConfiguration
   KNotificationPermission
   KNotificationReplyAction
   KNotifyConfig
