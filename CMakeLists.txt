@@ -21,7 +21,6 @@ include(GenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(ECMQtDeclareLoggingCategory)
-include(ECMPoQmTools)
 include(ECMGenerateExportHeader)
 include(ECMDeprecationSettings)
 include(ECMQmlModule)
@@ -102,8 +101,6 @@ endif()
 add_feature_info(PYTHON_BINDINGS ${BUILD_PYTHON_BINDINGS} "Python bindings")
 
 remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
-
-ecm_install_po_files_as_qm(poqm)
 
 ecm_set_disabled_deprecation_versions(
     QT 6.11

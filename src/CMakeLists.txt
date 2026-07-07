@@ -9,8 +9,6 @@ set_target_properties(KF6Notifications PROPERTIES
     EXPORT_NAME Notifications
 )
 
-ecm_create_qm_loader(KF6Notifications knotifications6_qt)
-
 target_sources(KF6Notifications PRIVATE
   knotification.cpp
   knotificationreplyaction.cpp
