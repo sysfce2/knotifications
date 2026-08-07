@@ -28,7 +28,7 @@ class KNotificationConfigurationPrivate;
  * This requires an installed \c .notifyrc file matching the application name
  * to work, a \c .notifyrc file bundled as Qt resource will only work on Android.
  *
- * \since 6.28
+ * \since 6.29
  */
 class KNOTIFICATIONS_EXPORT KNotificationConfiguration
 {
