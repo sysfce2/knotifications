@@ -38,6 +38,7 @@ ApplicationWindow {
             eventId: "notification"
             title: titleField.text
             text: textField.text
+            urls: urlField.text ? [urlField.text] : []
             iconName: "kde"
 
             defaultAction: NotificationAction {
@@ -85,6 +86,14 @@ ApplicationWindow {
                 text: "Lorem ipsum dolor sit"
             }
         }
+        RowLayout {
+            Label {
+                text: "URL"
+            }
+            TextField {
+                id: urlField
+            }
+        }
 
         CheckBox {
             id: persistentFlag
@@ -128,6 +137,7 @@ ApplicationWindow {
             title: titleField.text
             text: textField.text
             urgency: urgencyCombo.currentValue
+            urls: urlField.text ? [urlField.text] : []
             replyAction {
                 label: "Reply"
                 placeholderText: "Reply to chat group..."
